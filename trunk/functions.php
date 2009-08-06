@@ -121,7 +121,7 @@ function alphaID($in, $to_num = false, $pad_up = false){
         for ($t = floor(log10($in) / log10($base)); $t >= 0; $t--) {
             $a   = floor($in / pow($base, $t));
             $out = $out . substr($index, $a, 1);
-            $in  = $in - ($a * bcpow($base, $t));
+            $in  = $in - ($a * pow($base, $t));
         }
         $out = strrev($out); // reverse
     }
