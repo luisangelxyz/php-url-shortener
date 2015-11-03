@@ -1,0 +1,1 @@
+A simple and open source url shortener to use on your own site, requieres PHP and MySQL
